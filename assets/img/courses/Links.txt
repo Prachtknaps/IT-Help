@@ -1,0 +1,11 @@
+Backend: <a href="https://www.flaticon.com/free-icons/backend" title="backend icons">Backend icons created by Flat Icons - Flaticon</a>
+Computer Science: <a href="https://www.flaticon.com/free-icons/coding" title="coding icons">Coding icons created by Freepik - Flaticon</a>
+Database: <a href="https://www.flaticon.com/free-icons/database" title="database icons">Database icons created by Freepik - Flaticon</a>
+Economy: <a href="https://www.flaticon.com/free-icons/economy" title="economy icons">Economy icons created by ultimatearm - Flaticon</a>
+Game Development: <a href="https://www.flaticon.com/free-icons/game-development" title="game development icons">Game development icons created by Freepik - Flaticon</a>
+Law: <a href="https://www.flaticon.com/free-icons/law" title="law icons">Law icons created by Freepik - Flaticon</a>
+Networking: <a href="https://www.flaticon.com/free-icons/server" title="server icons">Server icons created by Eucalyp - Flaticon</a>
+Python: <a href="https://www.flaticon.com/free-icons/python-file" title="python file icons">Python file icons created by Smashicons - Flaticon</a>
+Security: <a href="https://www.flaticon.com/free-icons/security" title="security icons">Security icons created by Freepik - Flaticon</a>
+Software Engineering: <a href="https://www.flaticon.com/free-icons/software-development" title="software development icons">Software development icons created by Witdhawaty - Flaticon</a>
+UI & UX: <a href="https://www.flaticon.com/free-icons/ux" title="ux icons">Ux icons created by Freepik - Flaticon</a>

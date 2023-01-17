@@ -1,0 +1,43 @@
+body {
+    height: 100vh;
+    display: flex; align-items: center; justify-content: center;
+    background-image: url(../img/form-background.png);
+}
+section {
+    width: 90%; max-width: 450px; height: fit-content; padding: 50px 32px 32px 32px;
+    border-radius: 15px 25px;
+    background-color: var(--background-color);
+}
+section a.logo {
+    display: flex; flex-direction: row; align-items: center; justify-content: center;
+}
+img {
+    width: 100%; max-width: 300px; margin-bottom: 50px;
+}
+.form {
+    width: 100%; height: fit-content; margin-bottom: 50px; padding-bottom: 32px; gap: 16px;
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: flex-end;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.25);
+}
+.form input[type="text"], .form input[type="password"] {
+    width: 100%;  height: 50px; padding: 15px;
+    border: 1px solid var(--font-color-basic);
+    border-radius: 5px; outline: none;
+}
+.form input:focus {
+    border: 2px solid var(--primary-color);
+}
+.form .menu {
+    width: fit-content; height: fit-content; gap: 5px 32px;
+    display: flex; flex-direction: row; flex-wrap: wrap; align-items: center; justify-content: space-between;
+}
+.form .remember-me {
+    width: fit-content; height: fit-content; gap: 6px;
+    display: flex; flex-direction: row; align-items: flex-start; justify-content: space-between;
+}
+.form input[type="checkbox"] {
+    margin-top: 6px;
+}
+section p {
+    text-align: center;
+}
