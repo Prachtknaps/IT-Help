@@ -1,0 +1,118 @@
+:root {
+    --navbar-height: 65px;
+    --navbar-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* ===== Desktop (1920px) ===== */
+.main-header {
+    width: 100%; height: fit-content;
+    display: flex; flex-direction: row; align-items: center; justify-content: space-around;
+    position: fixed; left: 0; top: 0; z-index: 1000;
+    background-color: var(--background-color-nav); box-shadow: var(--navbar-box-shadow);
+}
+.main-header .nav-head {
+    width: fit-content; height: var(--navbar-height);
+    display: flex; flex-direction: row; align-items: center; justify-content: space-around;
+}
+.main-header img {
+    width: auto; height: calc(var(--navbar-height) - 15px);
+}
+.main-header .nav-toggle-btn {
+    display: none;
+}
+.main-header .nav-menu-container {
+    width: fit-content; height: fit-content;
+}
+.main-header .nav-menu {
+    width: fit-content; height: fit-content;
+    display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 75px;
+    transition: var(--transition-basic);
+}
+.main-header .nav-links, .main-header .nav-buttons {
+    width: fit-content; height: fit-content;
+    display: flex; flex-direction: row; align-items: center; justify-content: center; gap: 35px;
+}
+.main-header .nav-links a {
+    width: fit-content; height: var(--navbar-height); gap: 10px;
+    display: flex; flex-direction: row; align-items: center; justify-content: center;
+    transform: scale(1); transform-origin: center;
+    color: var(--font-color-nav); text-decoration: none;
+    transition: var(--transition-fast);
+}
+.main-header .nav-links a:hover {
+    transform: scale(1.1);
+    color: var(--primary-color);
+}
+.nav-overlay {
+    display: none;
+}
+
+
+
+/* ===== Media Queries ===== */
+
+@media all and (max-width: 1280px) {
+    .main-header .nav-menu {
+        gap: 50px;
+    }
+    .main-header .nav-links, .main-header .nav-buttons {
+        gap: 25px;
+    }
+    .main-header i {
+        display: none;
+    }
+}
+@media all and (max-width: 850px) {
+    .main-header {
+        height: var(--navbar-height);
+        flex-direction: column; justify-content: flex-start;
+        background-color: transparent;
+    }
+    .main-header .nav-head {
+        width: 100%; height: var(--navbar-height);
+        background-color: var(--background-color-nav); box-shadow: var(--navbar-box-shadow);
+    }
+    .main-header .nav-toggle-btn {
+        width: fit-content; height: var(--navbar-height); padding: 25px 15px;
+        display: flex; align-items: center; justify-content: center;
+        cursor: pointer;
+    }
+    .main-header .nav-menu-container {
+        width: 100%; height: calc(100vh - var((--navbar-height)));
+        position: absolute; top: var(--navbar-height); left: 100%;
+    }
+    .main-header .nav-menu {
+        width: 100%; height: calc(100vh - var((--navbar-height))); overflow: hidden;
+        flex-direction: column; justify-content: flex-start; gap: 0;
+        position: relative; left: 0%; z-index: -1;
+        box-shadow: var(--navbar-box-shadow);
+    }
+    .main-header .nav-menu.active {
+        left: -100%;
+    }
+    .main-header .nav-links {
+        width: 100%; height: fit-content; padding: 25px 0 75px 0; gap: 0;
+        flex-direction: column; justify-content: flex-start;
+        background-color: var(--background-color-nav);
+    }
+    .main-header .nav-links a {
+        width: 100%;
+    }
+    .main-header i {
+        display: flex;
+    }
+    .main-header .nav-buttons {
+        width: 100%; height: var(--navbar-height); gap: 25px;
+        border-top: 2px solid; border-image: linear-gradient(to right, transparent, var(--primary-color), transparent) 1;
+        background-color: var(--background-color-nav); 
+    }
+    .main-header .nav-menu .nav-overlay {
+        width: 100%; height: 100vh;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.75); opacity: 0;
+        transition: var(--transition-fast);
+    }
+    .main-header .nav-menu.active .nav-overlay {
+        opacity: 1;
+    }
+}
