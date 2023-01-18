@@ -1,0 +1,34 @@
+section {
+    width: 100vw; height: 100vh;
+    display: flex; flex-direction: row; align-items: center; justify-content: space-between;
+    background: url(../img/maintanance-background.jpg) no-repeat;
+    background-position: left; background-size: cover;
+}
+h1 {
+    font-size: var(--font-size-xxxl); line-height: var(--font-size-xxxl);
+}
+h2 {
+    font-size: var(--font-size-lg)
+}
+section .info {
+    gap: 25px;
+    display: flex; flex-direction: column; align-items: flex-start; justify-content: center;
+}
+section .info, section img {
+    width: 37.5vw;
+}
+
+@media all and (max-width: 1080px) {
+    section {
+        flex-direction: column; justify-content: flex-start; gap: 50px;
+    }
+    section .info {
+        align-items: center;
+    }
+    section .info, section img {
+        width: 100%;
+    }
+    h1, h2 {
+        text-align: center;
+    }
+}
